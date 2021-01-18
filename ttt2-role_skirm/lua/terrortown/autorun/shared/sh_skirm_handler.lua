@@ -9,3 +9,4 @@ hook.Add("TTT2PostPlayerDeath","SkirmisherLifeSteal", function(ply, _, attacker)
   if attacker:GetSubRole() ~= ROLE_SKIRMISHER then return end
   attacker:SetHealth(math.Clamp(attacker:Health() + GetConVar("ttt_skirm_regain"):GetInt(), 0, attacker:GetMaxHealth())
 end)
+end
