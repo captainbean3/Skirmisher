@@ -2,11 +2,10 @@ AddCSLuaFile()
 
 if SERVER then
 	resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_skirmisher.vmt")
-	resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_skirmisher.vtf")
 end
 
 function ROLE:PreInitialize()
-	self.color = Color(66, 245, 182, 255)
+	self.color = Color(132, 245, 66, 255)
 
 	self.abbr = "skirm" -- abbreviation
 	self.surviveBonus = 0 -- bonus multiplier for every survive while another player was killed
@@ -22,9 +21,8 @@ function ROLE:PreInitialize()
 		maximum = 1, -- maximum amount of roles in a round
 		minPlayers = 6, -- minimum amount of players until this role is able to get selected
 		togglable = true, -- option to toggle a role for a client if possible (F1 menu)
-		shopFallback = SHOP_DISABLED
-		random = 66
-	}
+		random = 66 
+}
 end
 
 function ROLE:Initialize()
