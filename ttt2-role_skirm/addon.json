@@ -1,0 +1,6 @@
+{
+"title" : "Skirmisher",
+"type" : "servercontent",
+"tags" : "fun",
+"ignore" : ["*.psd", "*.vcproj", "*.svn*"]
+}
