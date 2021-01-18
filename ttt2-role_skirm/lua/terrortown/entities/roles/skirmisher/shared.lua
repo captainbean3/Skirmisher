@@ -22,6 +22,7 @@ function ROLE:PreInitialize()
 		maximum = 1, -- maximum amount of roles in a round
 		minPlayers = 6, -- minimum amount of players until this role is able to get selected
 		togglable = true, -- option to toggle a role for a client if possible (F1 menu)
+		shopFallback = SHOP_DISABLED
 		random = 66
 	}
 end

@@ -10,3 +10,4 @@ hook.Add("TTT2PostPlayerDeath","SkirmisherLifeSteal", function(ply, _, attacker)
   attacker:SetHealth(math.Clamp(attacker:Health() + GetConVar("ttt_skirm_regain"):GetInt(), 0, attacker:GetMaxHealth())
 end)
 end
+end
